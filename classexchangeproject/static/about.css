@@ -1,0 +1,17 @@
+body {
+	background-color:#f5f5f5;
+	font-family: "Work Sans", "Arial", "sans-serif";
+}
+#textbody {
+	display: block;
+	padding-left: 15px;
+	font-size: 14px;
+	height: 150px;
+	text-align: left;
+}
+#header {
+	display: block;
+	height: 150px;
+	font-size: 30px;
+	text-align: center;
+}

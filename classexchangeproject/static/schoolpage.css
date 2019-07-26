@@ -1,0 +1,33 @@
+body { 
+ background-color:#f5f5f5;
+  font-family: "Trebuchet MS", "Arial", "sans-serif";
+}  
+  
+#header {
+  color:#00334d;
+  font-family: "Work Sans", "Times";
+  text-align: center;
+  
+}
+table, tr, th {
+  color:#00334d
+  
+}  
+table {
+  border: 3px solid black;
+  font-size: small;
+  font-style: italic;
+  width: 100%;
+}
+th {
+  width: 12.5%;
+  border: 2px solid gray;
+  cursor: pointer;
+}  
+tr {
+  height: 85px;
+  border: 2px solid gray;
+}
+th:hover {
+background-color:#dddddd
+}

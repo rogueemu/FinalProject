@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+<!doctype html>
+<html>
+<head>
+	<title>Woodlandm Example Class 1</title>
+	<script src="/static/chatroom.js"></script>
+</head>
+	<body>
+	<div id=header>
+		<h1>Example Class 1</h1>
+		<h3>Woodland Middle</h3>
+	
+	</div>
+	
+	
+	
+	
+	<div id=chatbox>
+		Hello {{ user.username }}
+		
+		{% for post in posts %}
+        <div><p><b>{{ post.author.username }}</b>: {{ post.body }}</p></div>
+        {% endfor %}
+			
+		
+			<form action="" method="post" novalidate>
+				{{ form.hidden_tag() }}
+			<p>
+				{{ form.username.label }} <br>
+				{{ form.username(size=32) }}       
+				{% for error in form.username.errors %}
+				<span style="color: red;">[{{ error }}]</span>
+				{% endfor %}
+			</p>
+			<p>
+				{{ form.body.label }} <br>
+				{{ form.body(size=32) }}
+				{% for error in form.body.errors %}
+				<span style="color=red;">[{{ error }}]</span>
+				{% endfor %}
+			</p>
+			<p>{{ form.submit() }}</p>
+			</form>
+		
+		
+		
+		
+	</div>
+
+
+
+
+
+	</body>
+</html>
+{% endblock %}
